@@ -1,0 +1,62 @@
+nav {
+    margin-bottom: 150px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ul .navigation {
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+li .backgroundBordeau {
+    background-color: #750708b3;
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 45px;
+    color: white;
+}
+
+#Accueil {
+    background-image: url('../images/gsvPresentation.jpeg');
+}
+
+#Achat {
+    background-image: url('../images/guitareVenteAchat.jpeg');
+}
+
+#Accessoires {
+    background-image: url('../images/gsvAccessoire.jpeg');
+}
+
+#Reparation {
+    background-image: url('../images/gsvReparation.jpeg');
+}
+
+#Evenement {
+    background-image: url('../images/tedNugentEvent.jpeg');
+}
+
+#Contact {
+    background-image: url('../images/guitarContact.jpeg');
+}
