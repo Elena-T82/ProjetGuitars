@@ -1,5 +1,5 @@
 nav {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 ul {
@@ -17,8 +17,8 @@ ul .navigation {
 
 li {
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     background-size: cover;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -33,7 +33,7 @@ li .backgroundBordeau {
 
 li a {
     text-decoration: none;
-    font-size: 45px;
+    font-size: 27px;
     color: white;
 }
 

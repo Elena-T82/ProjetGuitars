@@ -3,8 +3,21 @@
     padding: 0%;
 }
 
+@font-face {
+    font-family: "Police_Lobster";
+    src: url("../fonts/MilestoneFreeVersion-Script.otf");
+}
+
+h1,
 h2 {
-    font-size: 40px;
+    font-size: 55px;
+    font-family: "Police_Lobster";
+    color: grey;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
 }
 
 
@@ -22,13 +35,16 @@ header {
 header .titre {
     align-self: flex-end;
     width: 100%;
-    height: 190px;
 }
 
 header .logo {
     align-self: flex-end;
-    width: 357px;
-    height: 190px;
+    width: 30%;
+    background-color: rgba(93, 37, 37, 0.6);
+}
+
+.logo img {
+    width: 80%;
 }
 
 header h1 {
@@ -37,7 +53,7 @@ header h1 {
     color: white;
     background-color: rgba(93, 37, 37, 0.6);
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
     margin: 0%;
 }
 
@@ -58,7 +74,7 @@ header h1 {
 }
 
 .sliderPhoto div {
-    width: 50%;
+    width: 80%;
     height: 600px;
 }
 
@@ -71,7 +87,6 @@ header h1 {
 /* Style pour le footer */
 
 footer {
-    background-color: rgb(211, 201, 201);
     width: 100%;
     padding-top: 30px;
     border-top: 5px solid #750708;
@@ -92,7 +107,6 @@ footer .container div {
 
 footer .numTel {
     background-color: #750708;
-    height: 50px;
     min-width: 50%;
     margin: auto;
     color: white;
@@ -104,7 +118,10 @@ footer .adresse,
 .mail {
     color: grey;
     font-size: 20px;
-    padding-bottom: 30px;
+}
+
+footer .addresse {
+    padding-bottom: 50px;
 }
 
 footer .reseaux {
@@ -155,11 +172,18 @@ footer .mention div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .notreEquipe div {
-    width: 700px;
-    height: 900px;
+    width: 500px;
+    height: 600px;
+    font-size: 17px;
+}
+
+.notreEquipe div img {
+    width: 60%;
+    height: auto;
 }
 
 .itemLelarge {
@@ -174,6 +198,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-weight: bold;
+    color: grey;
+}
 
 
 /* Css de presentationGSV */
@@ -182,19 +210,48 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    flex-flow: wrap;
 }
 
 .presentation div {
-    width: 700px;
+    width: 540px;
 }
 
 .guitarContainer {
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: wrap;
 }
 
 .imgGuitarRight img {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 110px;
     margin-left: 60px;
+    flex: 1 1 auto;
+}
+
+
+/* partie responsive */
+
+@media screen and (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+    .presentation {
+        flex-flow: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgGuitarRight img {
+        width: 100%;
+        margin-top: 110px;
+        margin: auto;
+        flex: 1 1 auto;
+    }
 }
